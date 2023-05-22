@@ -10,7 +10,7 @@ const Reviews = () => {
     apiFilmReview(filmId).then(({ data }) => {
       setReviews(data.results);
     });
-  }, []);
+  }, [filmId]);
 
   return (
     <ul>

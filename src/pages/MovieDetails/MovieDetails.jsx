@@ -15,7 +15,7 @@ const MovieDetails = () => {
     apiFilmById(filmId).then(({ data }) => {
       setFilmInfo(data);
     });
-  }, []);
+  }, [filmId]);
 
   return (
     filmInfo && (
