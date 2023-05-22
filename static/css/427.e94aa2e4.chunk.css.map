@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/427.e94aa2e4.chunk.css","mappings":"AAAA,0BACE,YAAa,CACb,YACF,CAEA,iCACE,gBACF","sources":["components/FilmInfo/FilmInfo.module.css"],"sourcesContent":[".filmCard {\n  display: flex;\n  padding: 40px;\n}\n\n.filmDescription {\n  margin-left: 15px;\n}\n"],"names":[],"sourceRoot":""}
