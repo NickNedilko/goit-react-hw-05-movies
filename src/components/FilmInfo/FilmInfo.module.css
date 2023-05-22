@@ -1,0 +1,8 @@
+.filmCard {
+  display: flex;
+  padding: 40px;
+}
+
+.filmDescription {
+  margin-left: 15px;
+}

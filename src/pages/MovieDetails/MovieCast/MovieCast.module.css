@@ -1,0 +1,11 @@
+.actorsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+.photo {
+  width: 200px;
+  height: 270px;
+}
