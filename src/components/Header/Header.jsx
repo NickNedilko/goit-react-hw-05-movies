@@ -4,7 +4,7 @@ const { NavLink } = require('react-router-dom');
 const Header = () => {
   return (
     <div className={css.wrapper}>
-      <NavLink className={css.navLink} to="/home">
+      <NavLink className={css.navLink} to="/">
         Home
       </NavLink>
       <NavLink className={css.navLink} to="/movies">

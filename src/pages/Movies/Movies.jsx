@@ -6,7 +6,6 @@ import { apiSearchFilms } from 'services/ApiFilms';
 
 const Movies = () => {
   const [searchFilms, setSearchFilms] = useState([]);
-
   const [querryParams, setQuerryParams] = useSearchParams();
 
   const querry = querryParams.get('querry');
@@ -15,11 +14,15 @@ const Movies = () => {
     if (querry === null) {
       return;
     }
-    apiSearchFilms(querry).then(({ data }) => setSearchFilms(data.results));
+    apiSearchFilms(querry).then(({ data }) => setSearchFilms(data.results)).catch((error) => {
+      console.log(error)
+    });
   }, [querry]);
 
   const querryInput = search => {
-    console.log(search);
+    if (search === '') {
+      return setQuerryParams({});
+    }
     setQuerryParams({ querry: search });
   };
 

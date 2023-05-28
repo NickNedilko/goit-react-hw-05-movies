@@ -1,0 +1,14 @@
+.avtor{
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+.content{
+    font-size: 16px;
+    padding: 5px;
+    letter-spacing: 0.05em;
+    background-color: lightcyan;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+}

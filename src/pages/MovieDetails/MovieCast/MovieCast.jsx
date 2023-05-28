@@ -19,7 +19,7 @@ const MovieCast = () => {
       <ul className={css.actorsList}>
         {movieCast.map(({ original_name, profile_path, character }) => {
           return (
-            <li key={original_name}>
+            <li key={original_name} className={css.actorCard}>
               <img
                 className={css.photo}
                 src={
@@ -41,17 +41,3 @@ const MovieCast = () => {
 
 export default MovieCast;
 
-// movieCast &&
-// movieCast.map(({ original_name, profile_path }) => {
-//   return (
-//
-//       <li key={original_name}>
-//         <img
-//           src={`https://image.tmdb.org/t/p/w500${profile_path}`}
-//           alt={original_name}
-//         />
-//         <p>{original_name}</p>
-//       </li>
-//     </ul>
-//   );
-// })

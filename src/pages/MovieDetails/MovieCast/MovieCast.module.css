@@ -6,6 +6,14 @@
   gap: 15px;
 }
 .photo {
-  width: 200px;
+  width: 250px;
   height: 270px;
+}
+.actorCard {
+  width: 250px;
+  min-height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid grey;
 }
